@@ -1,2 +1,10 @@
 eclipse.preferences.version=1
 encoding//WebContent/token.jsp=UTF-8
+encoding//src/com/wangzs/weixin=UTF-8
+encoding//src/wx=UTF-8
+encoding//src/wx/common/AccessTokenInfo.java=UTF-8
+encoding//src/wx/entry/AccessToken.java=UTF-8
+encoding//src/wx/util/MessageHandlerUtil.java=UTF-8
+encoding//src/wx/util/NetWorkHelper.java=UTF-8
+encoding//src/wx/web/servlet/AccessTokenServlet.java=UTF-8
+encoding/<project>=UTF-8

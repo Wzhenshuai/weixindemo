@@ -4,6 +4,6 @@ import wx.entry.AccessToken;
 
 public class AccessTokenInfo {
 
-	//×¢ÒâÊÇ¾²Ì¬µÄ
+	//æ³¨æ„æ˜¯é™æ€çš„
 	public static AccessToken accessToken = null;
 }

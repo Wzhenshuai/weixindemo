@@ -12,19 +12,18 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
-import javax.security.cert.X509Certificate;
 
 
 /**
-  * ·ÃÎÊÍøÂçÓÃµ½µÄ¹¤¾ßÀà
+  * è®¿é—®ç½‘ç»œç”¨åˆ°çš„å·¥å…·ç±»
   */
 public class NetWorkHelper {
 
 	     /**
-	      * ·¢ÆğHttpsÇëÇó
-	      * @param reqUrl ÇëÇóµÄURLµØÖ·
+	      * å‘èµ·Httpsè¯·æ±‚
+	      * @param reqUrl è¯·æ±‚çš„URLåœ°å€
 	      * @param requestMethod
-	      * @return ÏìÓ¦ºóµÄ×Ö·û´®
+	      * @return å“åº”åçš„å­—ç¬¦ä¸²
 	      */
 	public String getHttpsResponse(String reqUrl, String requestMethod) {
 		URL url;
@@ -46,19 +45,19 @@ public class NetWorkHelper {
 					return true;
 				}
 			});
-			con.setDoInput(true); // ÔÊĞíÊäÈëÁ÷£¬¼´ÔÊĞíÏÂÔØ
+			con.setDoInput(true); // å…è®¸è¾“å…¥æµï¼Œå³å…è®¸ä¸‹è½½
 
-			// ÔÚandroidÖĞ±ØĞë½«´ËÏîÉèÖÃÎªfalse
-			con.setDoOutput(false); // ÔÊĞíÊä³öÁ÷£¬¼´ÔÊĞíÉÏ´«
+			// åœ¨androidä¸­å¿…é¡»å°†æ­¤é¡¹è®¾ç½®ä¸ºfalse
+			con.setDoOutput(false); // å…è®¸è¾“å‡ºæµï¼Œå³å…è®¸ä¸Šä¼ 
 
-			con.setUseCaches(false); // ²»Ê¹ÓÃ»º³å
+			con.setUseCaches(false); // ä¸ä½¿ç”¨ç¼“å†²
 
 			if (null != requestMethod && !requestMethod.equals("")) {
-				con.setRequestMethod(requestMethod); // Ê¹ÓÃÖ¸¶¨µÄ·½Ê½
+				con.setRequestMethod(requestMethod); // ä½¿ç”¨æŒ‡å®šçš„æ–¹å¼
 			} else {
-				con.setRequestMethod("GET"); // Ê¹ÓÃgetÇëÇó
+				con.setRequestMethod("GET"); // ä½¿ç”¨getè¯·æ±‚
 			}
-			is = con.getInputStream(); // »ñÈ¡ÊäÈëÁ÷£¬´ËÊ±²ÅÕæÕı½¨Á¢Á´½Ó
+			is = con.getInputStream(); // è·å–è¾“å…¥æµï¼Œæ­¤æ—¶æ‰çœŸæ­£å»ºç«‹é“¾æ¥
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader bufferReader = new BufferedReader(isr);
 			String inputLine;
@@ -94,4 +93,7 @@ public class NetWorkHelper {
 		}
 		
 	};
+	public static void main(String[] args) {
+		System.out.println("heheh----");
+	}
 }
